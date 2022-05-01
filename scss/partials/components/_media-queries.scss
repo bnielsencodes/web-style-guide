@@ -2,6 +2,8 @@
 /*              Media Queries                    */
 /* ============================================= */
 
+@import "../../partials/utilities/_index.scss";
+
 @media screen and (min-width: $breakpoint-tablet) {
   .container {
     max-width: 1400px;
