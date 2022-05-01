@@ -4,7 +4,7 @@
 
 @import "../../partials/utilities/_index.scss";
 
-@media screen and (min-width: $breakpoint-tablet) {
+@media screen and (min-width: $bp-m) {
   .container {
     max-width: 1400px;
     display: block;
