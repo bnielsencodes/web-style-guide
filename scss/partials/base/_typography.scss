@@ -1,8 +1,8 @@
+// IMPORTS
+
 @import "../../partials/utilities/variables";
 
-/* ============================================= */
-/*              Base styles                      */
-/* ============================================= */
+// BASE STYLES
 
 * {
   font-family: $font-primary;
@@ -18,9 +18,7 @@ a {
   text-decoration: none;
 }
 
-/* ============================================= */
-/*              Typography                       */
-/* ============================================= */
+// TYPOGRAPHY
 
 .headline-primary {
   color: $color-primary;

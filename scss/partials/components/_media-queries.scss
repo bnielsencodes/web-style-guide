@@ -1,21 +1,21 @@
-/* ============================================= */
-/*              Media Queries                    */
-/* ============================================= */
+// IMPORTS
 
-@import "../../partials/utilities/_index.scss";
+@import "../../partials/utilities/variables";
+@import "../../partials/utilities/mixins";
 
-@media screen and (min-width: $bp-m) {
+// Media Queries --------- //
+
+@media (min-width: $bp-m) {
   .container {
-    max-width: 1400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    @include center($max-width: 1400px);
   }
 
   .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    @include center();
+  }
+
+  #logo-container {
+    @include flexy($disp: flex, $dir: null, $wrap: null, $basis: null, $just: flex-start);
   }
 
   .row {
@@ -23,79 +23,77 @@
   }
 
   [class^="col"] {
-    display: flex;
-    justify-content: center;
+    @include flexy($just: center);
     margin-top: 0;
     align-items: center;
   }
 
-  [class^="col"]+[class^="col"] {
+  [class^="col"] + [class^="col"] {
     margin-left: 10px;
   }
 
   .col-1 {
-    flex-basis: 8.33%;
+    flex-basis: $col-1-flex;
   }
 
   .col-2 {
-    flex-basis: 16.67%;
+    flex-basis: $col-2-flex;
   }
 
   .col-3 {
-    flex-basis: 25%;
+    flex-basis: $col-3-flex;
   }
 
   .col-4 {
-    flex-basis: 33.33%;
+    flex-basis: $col-4-flex;
   }
 
   .col-5 {
-    flex-basis: 41.67%;
+    flex-basis: $col-5-flex;
   }
 
   .col-6 {
-    flex-basis: 50%;
+    flex-basis: $col-6-flex;
   }
 
   .col-7 {
-    flex-basis: 58.33%;
+    flex-basis: $col-7-flex;
   }
 
   .col-8 {
-    flex-basis: 66.67%;
+    flex-basis: $col-8-flex;
   }
 
   .col-9 {
-    flex-basis: 75%;
+    flex-basis: $col-9-flex;
   }
 
   .col-10 {
-    flex-basis: 83.33%;
+    flex-basis: $col-10-flex;
   }
 
   .col-11 {
-    flex-basis: 91.67%;
+    flex-basis: $col-11-flex;
   }
 
   .col-12 {
-    flex-basis: 100%;
+    flex-basis: $col-12-flex;
   }
 
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
+  #nav-row {
+    @include flexy($disp: null, $dir: row, $wrap: null, $basis: null, $just: flex-end);
     align-items: center;
   }
 
   .nav-link {
-    flex-basis: 100px;
+    @include flexy($basis: 100px, $disp: null);
   }
 
   .btn {
     padding: 10px 30px;
   }
 
-  .btn+.btn {
+  .btn + .btn {
     margin-left: 10px;
   }
 

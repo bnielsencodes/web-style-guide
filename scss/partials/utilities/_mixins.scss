@@ -1,3 +1,7 @@
+// IMPORTS
+
+@import "../../partials/utilities/variables";
+
 // CENTERS CONTAINERS
 @mixin center($max-width: null, $margin-top: null, $disp: null) {
   max-width: $max-width;
@@ -8,7 +12,7 @@
 }
 
 // FLEXBOX
-@mixin flexy($disp: flex, $dir: null, $wrap: null, $just: null, $basis: null) {
+@mixin flexy($disp: flex, $dir: null, $wrap: null, $basis: null, $just: null) {
   display: $disp;
   flex-direction: $dir;
   flex-wrap: $wrap;
