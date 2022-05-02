@@ -1,6 +1,6 @@
-/* ============================================= */
-/*              Color Variables                  */
-/* ============================================= */
+$font-primary: "Lato", sans-serif;
+
+// COLOR VARIABLES
 
 $white: #fff;
 $light-gray: #ccc;
@@ -9,22 +9,52 @@ $color-primary: #58e1c1; // medium turquoise
 $color-secondary: #51ddfc; // sky blue
 $color-text: #777; // gray
 
-$themes: ('1': #927bc1, // ube
-  '2': #fd7856, // coral
-  '3': #deb2ee, // mauve
-  '4': #7ee6fd, // electric blue
-  '5': #88d9a0, // eton blue
-  '6': #4da2bb, // maximum blue
-  '7': #ec9fa3, // mauvelous
-  '8': #fd9f85, // vivid tangerine
-  '9': #e4757a, // candy pink
-  '10': #63cc82, // emerald
-  '11': $color-secondary, // sky blue
-  '12': #80e8d1, // middle blue green
+// GRID THEME COLORS
+
+$themes: (
+  "1": #927bc1,
+  "2": #fd7856,
+  "3": #deb2ee,
+  "4": #7ee6fd,
+  "5": #88d9a0,
+  "6": #4da2bb,
+  "7": #ec9fa3,
+  "8": #fd9f85,
+  "9": #e4757a,
+  "10": #63cc82,
+  "11": $color-secondary,
+  "12": #80e8d1
 );
 
-/* ============================================= */
-/*              Breakpoints                      */
-/* ============================================= */
+// BUTTON COLORS
 
-$bp-m : 768px; // tablet
+$buttons: (
+  "default": $color-secondary,
+  "success": #63cc82,
+  "error": #e4757a,
+  "warning": #fd7856,
+  "info": #927bc1
+);
+
+// COLUMNS
+
+$cols: (
+  1: 1,
+  2: 2,
+  3: 3,
+  4: 4,
+  5: 5,
+  6: 6,
+  7: 7,
+  8: 8,
+  9: 9,
+  10: 10,
+  11: 11,
+  12: 12
+);
+
+$columns: 12;
+
+// BREAKPOINT
+
+$bp-m: 768px;
