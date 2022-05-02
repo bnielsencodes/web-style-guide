@@ -1,33 +1,24 @@
-/* ============================================= */
-/*              Buttons                          */
-/* ============================================= */
+@import "../../partials/utilities/variables";
+
+// BUTTONS
 
 .btn {
   margin-top: 15px;
   width: 100%;
-  color: #fff;
+  color: $white;
   border: none;
   padding: 10px 0;
   text-transform: uppercase;
   border-radius: 5px;
 }
 
-.default {
-  background-color: #51ddfc;
-}
-
-.error {
-  background-color: #e4757a;
-}
-
-.info {
-  background-color: #927bc1;
-}
-
-.success {
-  background-color: #63cc82;
-}
-
-.warning {
-  background-color: #fd7856;
+@each $button, $color in $buttons {
+  .#{$button} {
+    background-color: $color;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    &:hover {
+      background-color: lighten($color, 10%);
+      color: $color-text;
+    }
+  }
 }

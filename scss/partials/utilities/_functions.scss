@@ -1,0 +1,4 @@
+// Creates % based on # of columns divided by total
+@function divide($amount: $col, $total: $columns) {
+  @return calc($amount / $total) * 100%;
+}
