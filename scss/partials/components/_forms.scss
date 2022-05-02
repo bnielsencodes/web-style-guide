@@ -1,6 +1,4 @@
-/* ============================================= */
-/*              Forms                            */
-/* ============================================= */
+@import "../../partials/utilities/variables";
 
 .form {
   flex-basis: 100%;
@@ -12,7 +10,7 @@
   margin: 10px auto 0;
   border: none;
   padding: 10px;
-  border-bottom: 5px solid #58e1c1;
+  border-bottom: 5px solid $color-primary;
 }
 
 .hidden {
