@@ -1,4 +1,4 @@
-// Centers containers ------------------------------ /
+// CENTERS CONTAINERS
 @mixin center($max-width: null, $margin-top: null, $disp: null) {
   max-width: $max-width;
   margin-top: $margin-top;
@@ -7,7 +7,7 @@
   margin-right: auto;
 }
 
-// Flex Box ------------------------------ /
+// FLEXBOX
 @mixin flexy($disp: flex, $dir: null, $wrap: null, $just: null, $basis: null) {
   display: $disp;
   flex-direction: $dir;
@@ -16,7 +16,7 @@
   justify-content: $just;
 }
 
-// Applies background color ------------------------------ /
+// ADDS BACKGROUND COLOR
 @mixin themes($map) {
   @each $theme, $color in $map {
     &#{$theme} {
