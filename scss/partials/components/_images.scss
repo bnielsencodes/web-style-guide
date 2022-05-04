@@ -1,14 +1,10 @@
-// IMPORTS
-
-@import "../../partials/utilities/mixins";
-@import "../../partials/utilities/variables";
-
 // IMAGES
 
-.img-avatar .img-frame,
+.img-frame,
 .img-logo,
 .img-avatar {
   @include center($max-width: 100%, $margin-top: 10px, $disp: block);
+  max-width: 100%;
 }
 
 .img-avatar {

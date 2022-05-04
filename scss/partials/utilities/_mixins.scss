@@ -1,7 +1,3 @@
-// IMPORTS
-
-@import "../../partials/utilities/variables";
-
 // CENTERS CONTAINERS
 @mixin center($max-width: null, $margin-top: null, $disp: null) {
   max-width: $max-width;
